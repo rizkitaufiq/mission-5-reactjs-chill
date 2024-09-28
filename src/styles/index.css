@@ -14,5 +14,8 @@
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  z-index: -1;
+}
+
+.box-form-color{
+  background-color:#181A1CD6;
 }

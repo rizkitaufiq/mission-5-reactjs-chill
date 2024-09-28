@@ -1,12 +1,14 @@
-import ButtonSubmit from "../components/atoms/Button/ButtonSubmit";
+import AuthLayouts from "../layouts/AuthLayouts";
+import LoginForm from "../components/organisems/LoginForm";
 
 const Login = () => {
   return (
     <>
-      <div className="login-background">
-        <h1>Login</h1>
-        <ButtonSubmit />
-      </div>
+      <section className="login-background">
+        <AuthLayouts>
+          <LoginForm />
+        </AuthLayouts>
+      </section>
     </>
   );
 };
