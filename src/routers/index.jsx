@@ -1,14 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-import Login from '../pages/Login';
+import { Routes, Route } from "react-router-dom";
+import Login from "../pages/Login";
+import Beranda from "../pages/Beranda";
 
 const Router = () => {
-    return (
-        <Routes>
-            
-            <Route path="/" element={<Login />}/>
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
 
-        </Routes>
-    )
-}
+      <Route path="/beranda" element={<Beranda />} />
+    </Routes>
+  );
+};
 
 export default Router;
