@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 const InputAuth = (props) => {
-  const { type, id, placeholder, onChange, value } = props;
+  const { type, id, placeholder } = props;
   return (
     <div className="mb-2">
       <input
@@ -9,8 +9,6 @@ const InputAuth = (props) => {
         type={type}
         className="text-sm text-white border border-solid border-default placeholder-gray placeholder-sm w-full bg-transparent rounded-3xl mb-2 p-2 pl-4"
         placeholder={placeholder}
-        onChange={onChange}
-        value={value}
         required
       />
     </div>

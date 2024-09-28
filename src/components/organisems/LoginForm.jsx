@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import InputLabel from "../molecules/InputField/InputLabel";
 import ButtonSubmit from "../atoms/Button/ButtonSubmit";
 import ChillLogo from "../../assets/images/auth/Logo.svg";
@@ -6,13 +6,10 @@ import EyesIcon from "../../assets/images/auth/eye-off.svg";
 import SSOIcon from "../../assets/images/auth/sso-icon.svg";
 
 const LoginForm = () => {
-  // const [username, setUsername] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    history.push("/beranda");
+  const handleSubmit = () => {
+    navigate("/beranda");
   };
 
   return (
@@ -29,7 +26,6 @@ const LoginForm = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
-        {/* {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>} */}
         <div className="p-4">
           <InputLabel
             htmlFor="username"
@@ -38,8 +34,6 @@ const LoginForm = () => {
             label="Username"
             type="text"
             placeholder="Masukan username"
-            // value={username}
-            // onChange={(e) => setUsername(e.target.value)}
           />
 
           <div className="relative">
@@ -50,8 +44,6 @@ const LoginForm = () => {
               label="Kata Sandi"
               type="password"
               placeholder="Masukan kata sandi"
-              // value={password}
-              // onChange={(e) => setPassword(e.target.value)}
             />
             <img
               src={EyesIcon}
