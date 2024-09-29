@@ -5,7 +5,7 @@ const ButtonSubmit = (props) => {
   return (
     <div>
       <button
-        className={`${buttonColor} mb-2 text-sm border border-solid border-default w-full rounded-3xl text-white h-[2.5rem]`}
+        className={`${buttonColor} mb-2 text-sm border border-solid border-default hover:bg-btnHover hover:text-black w-full rounded-3xl text-white h-[2.5rem]`}
         type={type}
       >
         {text}
