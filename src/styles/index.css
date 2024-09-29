@@ -16,6 +16,17 @@
   background-repeat: no-repeat; 
 }
 
+.register-background{
+  background-image: url('/src/assets/images/auth/bg-register.jfif');
+  position: fixed; 
+  margin:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
 .box-form-color{
   background-color:#181A1CD6;
 }
