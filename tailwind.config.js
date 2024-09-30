@@ -8,6 +8,8 @@ export default {
         primary: "#3D4142",
         gray: "#C1C2C4",
         btnHover: "#E0E0E0",
+        mainBG: "#22282A",
+        textPrimary: "#3254FF",
       },
     },
   },

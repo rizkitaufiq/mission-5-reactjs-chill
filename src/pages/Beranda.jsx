@@ -1,10 +1,13 @@
-// import React from "react";
-// import PropTypes from "prop-types";
+import Navbar from "../components/organisems/Navbar";
 
 const Beranda = () => {
-  return <div>Beranda</div>;
+  return (
+    <div>
+      <body className="bg-mainBG h-screen">
+        <Navbar />
+      </body>
+    </div>
+  );
 };
-
-// Beranda.propTypes = {};
 
 export default Beranda;
