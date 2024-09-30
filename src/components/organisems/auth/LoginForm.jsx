@@ -1,17 +1,17 @@
 import { useNavigate, Link } from "react-router-dom";
 
-import InputLabel from "../molecules/InputField/InputLabel";
-import ButtonSubmit from "../atoms/Button/ButtonSubmit";
+import InputLabel from "../../molecules/InputField/InputLabel";
+import ButtonSubmit from "../../atoms/Button/ButtonSubmit";
 
-import ChillLogo from "../../assets/images/auth/Logo.svg";
-import EyesIcon from "../../assets/images/auth/eye-off.svg";
-import SSOIcon from "../../assets/images/auth/sso-icon.svg";
+import ChillLogo from "../../../assets/images/auth/Logo.svg";
+import EyesIcon from "../../../assets/images/auth/eye-off.svg";
+import SSOIcon from "../../../assets/images/auth/sso-icon.svg";
 
-const RegisterForm = () => {
+const LoginForm = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    navigate("/");
+    navigate("/beranda");
   };
 
   return (
@@ -22,8 +22,8 @@ const RegisterForm = () => {
 
       <div className="flex justify-center text-center mt-4 text-white">
         <div className="row">
-          <h3 className="font-bold text-3xl">Daftar</h3>
-          <p className="text-base">Selamat datang</p>
+          <h3 className="font-bold text-3xl">Masuk</h3>
+          <p className="text-base">Selamat datang kembali</p>
         </div>
       </div>
 
@@ -54,38 +54,28 @@ const RegisterForm = () => {
             />
           </div>
 
-          <div className="relative">
-            <InputLabel
-              htmlFor="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              label="Konfirmasi Kata Sandi"
-              type="password"
-              placeholder="Masukan kata sandi"
-            />
-            <img
-              src={EyesIcon}
-              alt="image"
-              className="absolute top-10 right-3"
-            />
-          </div>
-
           <div className="flex justify-between text-sm mb-8">
             <div className="flex column gap-1">
-              <p className="text-gray">Sudah punya akun?</p>
-              <Link to="/">
-                <p className="text-white">Masuk</p>
+              <p className="text-gray">Belum punya akun?</p>
+              <Link to="/register">
+                <p className="text-white">Daftar</p>
               </Link>
+            </div>
+
+            <div className="flex">
+              <a href="" className="text-white">
+                Lupa kata sandi?
+              </a>
             </div>
           </div>
 
-          <ButtonSubmit type="submit" text="Daftar" buttonColor="bg-primary" />
+          <ButtonSubmit type="submit" text="Masuk" buttonColor="bg-primary" />
 
           <p className="text-center text-sm text-gray mb-2">Atau</p>
 
           <div className="relative">
             <Link to="/beranda">
-              <ButtonSubmit type="button" text="Daftar dengan Google" />
+              <ButtonSubmit type="button" text="Masuk dengan Google" />
               <img
                 src={SSOIcon}
                 alt="image"
@@ -99,4 +89,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default LoginForm;

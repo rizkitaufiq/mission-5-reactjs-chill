@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
-import Logo from "../../assets/images/beranda/icon/logo.svg";
-import Avatar from "../../assets/images/beranda/avatar.png";
+import Logo from "../../../assets/images/beranda/icon/logo.svg";
+import Avatar from "../../../assets/images/beranda/avatar.png";
 
 const Navbar = () => {
   const menu = [
