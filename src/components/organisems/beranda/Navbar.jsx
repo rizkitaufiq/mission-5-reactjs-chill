@@ -33,9 +33,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="max-auto flex justify-between items-center text-white text-sm p-6 w-full">
-        <div className="flex space-x-4">
-          <img src={Logo} alt="image" width="50px" />
+      <nav className="max-auto flex justify-between items-center text-center text-white text-xs md:text-lg p-6 w-full">
+        <div className="flex gap-2 md:gap-10">
+          <img src={Logo} alt="image" className="w-[40px] md:w-[70px]" />
           {menu.map((item, index) => (
             <p key={index} className="hover:text-textPrimary">
               <Link to={item.path}>{item.name}</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         <div className="relative flex space-x-4" ref={dropDownRef}>
           <button onClick={toggleDropdown}>
-            <img src={Avatar} alt="image" />
+            <img src={Avatar} alt="image" className="w-[40px] md:w-[100%]" />
           </button>
 
           {isDropDownOpen && (
@@ -62,7 +62,7 @@ const Navbar = () => {
                     viewBox="0 0 16 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:fill-textPrimary mr-2"
+                    className="hover:fill-textPrimary mr-2 mt-0 md:mt-2"
                   >
                     <path
                       d="M8 0C9.06087 0 10.0783 0.421427 10.8284 1.17157C11.5786 1.92172 12 2.93913 12 4C12 5.06087 11.5786 6.07828 10.8284 6.82843C10.0783 7.57857 9.06087 8 8 8C6.93913 8 5.92172 7.57857 5.17157 6.82843C4.42143 6.07828 4 5.06087 4 4C4 2.93913 4.42143 1.92172 5.17157 1.17157C5.92172 0.421427 6.93913 0 8 0ZM8 10C12.42 10 16 11.79 16 14V16H0V14C0 11.79 3.58 10 8 10Z"
@@ -84,7 +84,7 @@ const Navbar = () => {
                     viewBox="0 0 23 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:fill-textPrimary mr-2"
+                    className="hover:fill-textPrimary mr-2 mt-0 md:mt-1"
                   >
                     <path
                       d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.62L12 2L9.19 8.62L2 9.24L7.45 13.97L5.82 21L12 17.27Z"
@@ -106,7 +106,7 @@ const Navbar = () => {
                     viewBox="0 0 18 18"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:fill-textPrimary mr-2"
+                    className="hover:fill-textPrimary mr-2 mt-0 md:mt-2"
                   >
                     <path
                       d="M16 0H2C0.89 0 0 0.89 0 2V6H2V2H16V16H2V12H0V16C0 16.5304 0.210714 17.0391 0.585786 17.4142C0.960859 17.7893 1.46957 18 2 18H16C16.5304 18 17.0391 17.7893 17.4142 17.4142C17.7893 17.0391 18 16.5304 18 16V2C18 0.89 17.1 0 16 0ZM7.08 12.58L8.5 14L13.5 9L8.5 4L7.08 5.41L9.67 8H0V10H9.67L7.08 12.58Z"
