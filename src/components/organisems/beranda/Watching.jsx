@@ -1,10 +1,10 @@
-import watchingMovie from "../../../store/beranda/watchingMovie";
+import watchingMovies from "../../../store/beranda/watchingMovies";
 import Star from "../../../assets/images/beranda/icon/star.svg";
 import rightArrow from "../../../assets/images/beranda/icon/right-arrow.svg";
 import leftArrow from "../../../assets/images/beranda/icon/left-arrow.svg";
 
 const Watching = () => {
-  const { movies } = watchingMovie();
+  const { movies } = watchingMovies();
   return (
     <div>
       <section className="relative p-2 text-white w-full overflow-hidden">

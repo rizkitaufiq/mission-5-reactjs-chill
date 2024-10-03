@@ -4,7 +4,7 @@ import theBatman from "../../assets/images/beranda/content/the-batman.png";
 import blueLock from "../../assets/images/beranda/content/blue-lock.png";
 import aManCalledOtto from "../../assets/images/beranda/content/a-man-called-otto.png";
 
-const watchingMovie = create(() => ({
+const watchingMovies = create(() => ({
   movies: [
     {
       title: "Don't Look Up",
@@ -32,4 +32,4 @@ const watchingMovie = create(() => ({
   ],
 }));
 
-export default watchingMovie;
+export default watchingMovies;
