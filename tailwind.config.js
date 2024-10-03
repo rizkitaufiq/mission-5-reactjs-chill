@@ -13,6 +13,8 @@ export default {
         textPrimary: "#3254FF",
         info: "#0F1E93",
         infoHover: "#0367DB",
+        error: "#B71F1D",
+        errorHover: "#DB3A2A",
       },
     },
   },
