@@ -2,6 +2,7 @@ import watchingMovie from "../../../store/beranda/watchingMovie";
 import Star from "../../../assets/images/beranda/icon/star.svg";
 import rightArrow from "../../../assets/images/beranda/icon/right-arrow.svg";
 import leftArrow from "../../../assets/images/beranda/icon/left-arrow.svg";
+
 const Watching = () => {
   const { watching } = watchingMovie();
   return (
