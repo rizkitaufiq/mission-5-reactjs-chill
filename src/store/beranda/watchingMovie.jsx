@@ -5,7 +5,7 @@ import blueLock from "../../assets/images/beranda/content/blue-lock.png";
 import aManCalledOtto from "../../assets/images/beranda/content/a-man-called-otto.png";
 
 const watchingMovie = create(() => ({
-  watching: [
+  movies: [
     {
       title: "Don't Look Up",
       poster: dontLookUp,

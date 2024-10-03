@@ -4,7 +4,7 @@ import rightArrow from "../../../assets/images/beranda/icon/right-arrow.svg";
 import leftArrow from "../../../assets/images/beranda/icon/left-arrow.svg";
 
 const Watching = () => {
-  const { watching } = watchingMovie();
+  const { movies } = watchingMovie();
   return (
     <div>
       <section className="relative p-2 text-white w-full overflow-hidden">
@@ -14,20 +14,20 @@ const Watching = () => {
           </h3>
 
           <div className="relative flex gap-3 md:gap-8 mb-4 w-full overflow-scroll md:overflow-hidden">
-            {watching.map((movies, index) => (
+            {movies.map((movie, index) => (
               <div key={index} className="relative">
                 <h6 className="absolute bottom-3 left-4 text-[14px] md:text-[18px]">
-                  {movies.title}
+                  {movie.title}
                 </h6>
                 <div className="w-[309px] md:w-[302px]">
-                  <img src={movies.poster} alt={`${movies.titles}`} />
+                  <img src={movie.poster} alt={`${movie.titles}`} />
                 </div>
                 <img
                   src={Star}
                   alt="image"
                   className="absolute bottom-3 right-14"
                 />
-                <p className="absolute bottom-3 right-4">{movies.rating}</p>
+                <p className="absolute bottom-3 right-4">{movie.rating}</p>
               </div>
             ))}
           </div>
