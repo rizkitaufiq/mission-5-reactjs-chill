@@ -96,7 +96,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/beranda"
+                to="/"
                 className="block px-4 py-2 text-gray-800 hover:text-textPrimary focus:text-textPrimary"
               >
                 <div className="flex column">

@@ -21,7 +21,7 @@ const RegisterForm = () => {
       </div>
 
       <div className="flex justify-center text-center mt-4 text-white">
-        <div className="row">
+        <div className="flex flex-col">
           <h3 className="font-bold text-3xl">Daftar</h3>
           <p className="text-base">Selamat datang</p>
         </div>
@@ -71,7 +71,7 @@ const RegisterForm = () => {
           </div>
 
           <div className="flex justify-between text-sm mb-8">
-            <div className="flex column gap-1">
+            <div className="flex flex-row gap-1">
               <p className="text-gray">Sudah punya akun?</p>
               <Link to="/">
                 <p className="text-white">Masuk</p>
