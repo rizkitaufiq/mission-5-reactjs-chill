@@ -87,9 +87,9 @@ const Footer = () => {
               className="flex flex-row justify-between w-full cursor-pointer mb-[8px]"
             >
               <div className="flex text-white">
-                <button>
+                <div>
                   <p>Genre</p>
-                </button>
+                </div>
               </div>
 
               <div className="flex ">
@@ -143,9 +143,9 @@ const Footer = () => {
               className="flex flex-row justify-between w-full cursor-pointer"
             >
               <div className="flex">
-                <button>
+                <div>
                   <p>Bantuan</p>
-                </button>
+                </div>
               </div>
 
               <div className="flex ">
