@@ -12,7 +12,7 @@ const Rating = () => {
             Top Rating Film dan Series Hari ini
           </h3>
 
-          <div className="relative flex gap-4 md:gap-8 mb-4 w-full overflow-scroll md:overflow-hidden">
+          <div className="relative flex gap-5 md:gap-8 mb-4 w-full overflow-scroll md:overflow-hidden">
             {movies.map((movie, index) => (
               <div key={index} className="relative">
                 <div className="w-[95px] md:w-[234px]">
