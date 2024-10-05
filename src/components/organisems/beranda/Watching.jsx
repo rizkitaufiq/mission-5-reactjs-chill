@@ -9,7 +9,7 @@ const Watching = () => {
     <div>
       <section className="relative p-2 text-white w-full overflow-hidden">
         <div className="p-4">
-          <h3 className="text-white font-bold text-[20px] md:text-[32px] mt-5 md:mt-10 mb-4">
+          <h3 className="text-white font-bold text-[20px] md:text-[32px] mt-5 md:mt-0 mb-4">
             Melanjutkan Tonton Film
           </h3>
 
@@ -32,7 +32,7 @@ const Watching = () => {
             ))}
           </div>
         </div>
-        <div className="absolute flex justify-between w-full top-[9rem] md:top-[12rem]">
+        <div className="absolute flex justify-between w-full top-[9rem] md:top-[9rem]">
           <div className="flex w-[44px] -ml-2">
             <img src={leftArrow} alt="image" />
           </div>

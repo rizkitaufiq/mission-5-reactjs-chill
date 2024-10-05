@@ -8,8 +8,8 @@ import Information from "../../../assets/images/beranda/icon/information-outline
 const Hero = () => {
   return (
     <div>
-      <section className="aboslute text-white bg-hero h-30 w-auto overflow-hidden">
-        <div className="hero-background mx-auto h-[20%] lg:h-screen">
+      <section className="aboslute text-white bg-hero h-30 lg:h-[100vh] w-auto overflow-hidden">
+        <div className="hero-background mx-auto h-[28vh] lg:h-[90vh]">
           <div className="relative -bottom-5  md:-bottom-80 left-0 p-6">
             <article className="mb-6 md:mb-10 w-full max-w-sm md:max-w-3xl">
               <h1 className="font-bold text-2xl md:text-5xl mb-5">
@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
             </article>
             <footer className="flex justify-between items-center">
-              <div className="flex column gap-2.5 ">
+              <div className="flex flex-row gap-2.5 ">
                 <Button
                   buttonColor="bg-info"
                   buttonHover="hover:bg-infoHover"
