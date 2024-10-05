@@ -4,6 +4,7 @@ import Watching from "../components/organisems/beranda/Watching";
 import Rating from "../components/organisems/beranda/Rating";
 import Trending from "../components/organisems/beranda/Trending";
 import Realese from "../components/organisems/beranda/Realese";
+import Footer from "../components/organisems/beranda/Footer";
 
 const Beranda = () => {
   return (
@@ -15,6 +16,7 @@ const Beranda = () => {
         <Rating />
         <Trending />
         <Realese />
+        <Footer />
       </div>
     </div>
   );
